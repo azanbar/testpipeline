@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
   BucketName:
     Type: String
-    Default: lfcarocomdemo
+    Default: aws-glue-ml-scripts
   ObjectKey:
     Type: String
     Default: cibgblogpost/6SxDlu3
