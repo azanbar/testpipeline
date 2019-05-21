@@ -23,7 +23,7 @@ GitPassword = urllib.quote_plus(response["ServiceSpecificCredential"]["ServicePa
 url = ccresponse["repositoryMetadata"]["cloneUrlHttp"][8:]
 url = "https://{0}:{1}@".format(GitUsername, GitPassword) + url
 time.sleep(30)
-subprocess.check_call(["git", "clone", url])
+subprocsdvcbess.check_call(["git", "clone", url])
 subprocess.check_call("cp -r *.yaml " +reponame, shell=True)
 subprocess.check_call("cp -r *.py " +reponame, shell=True)
 os.chdir( path )
