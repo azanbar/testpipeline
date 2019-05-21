@@ -17,7 +17,7 @@ print path
 
 response = client.create_service_specific_credential( UserName=user, ServiceName='codecommit.amazonaws.com')
 ccresponse = codecommit.get_repository(repositoryName=reponame)
-credentialId = response["ServiceSpecificCredential"]["ServiceSpecificCredentialId"]
+credxxxentialId = response["ServiceSpecificCredential"]["ServiceSpecificCredentialId"]
 GitUsername = response["ServiceSpecificCredential"]["ServiceUserName"]
 GitPassword = urllib.quote_plus(response["ServiceSpecificCredential"]["ServicePassword"])
 url = ccresponse["repositoryMetadata"]["cloneUrlHttp"][8:]
